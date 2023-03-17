@@ -34,7 +34,7 @@ const Header = (props: Props) => {
                     fgColor='gray'
                     bgColor='transparent' />
             </motion.div>
-            <Link href="#contact">
+
             <motion.div
                 initial={{
                     x: 500,
@@ -50,15 +50,16 @@ const Header = (props: Props) => {
                     duration: 1.5,
                 }}
                 className='flex flex-row items-center text-gray-400 cursor-pointer'>
-                <SocialIcon
-                    className='cursor-pointer'
-                    network='email'
-                    fgColor='gray'
-                    bgColor='transparent' />
-                <p className='uppercase hidden md:inline-flex text-sm text-gray-400'>Lets Link Up</p>
-
+                <Link href="#contact">
+                    <SocialIcon
+                        className='cursor-pointer'
+                        network='email'
+                        fgColor='gray'
+                        bgColor='transparent' />
+                    <p className='uppercase hidden md:inline-flex text-sm text-gray-400'>Lets Link Up</p>
+                </Link>
             </motion.div>
-        </Link>
+
 
         </header >
     )
