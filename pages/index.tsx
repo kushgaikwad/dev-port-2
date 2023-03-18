@@ -20,6 +20,7 @@ export default function Home() {
 
       {/* Hero */}
       <section id='hero' className='snap-start'>
+      <Header/>
         <Hero/>
       </section>
 
