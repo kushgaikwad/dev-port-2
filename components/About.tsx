@@ -31,7 +31,7 @@ const About = (props: Props) => {
             <div className='space-y-10 px-0 md:px-10'>
                 <h4 className='text-4xl font-semibold'>Here is a
                     <span className='underline'> little</span>  background</h4>
-                    <p className='text-base'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At deleniti magnam perferendis vero? Laboriosam quasi pariatur ex asperiores dicta explicabo minima veniam mollitia?</p>
+                    <p className='text-base'>Hailing from India, I grew up around the creative industries. I have a background in building tech products, generative art and musical experiences that spans across traditional platforms and web3. I am really passionate about elevating culture and community through emergent technologies.</p>
             </div>
         </motion.div>
     )
