@@ -63,7 +63,7 @@ const Contact = (props: Props) => {
                 <div className='grid grid-cols-1 gap-x-16  md:gap-y-8 lg:grid-cols-5'>
                     <div className="lg:col-span-2 lg:py-12">
                         <p className="max-w-xl text-[12px] md:text-lg mx-3 my-2 mt-5 md:my-10 md:mt-20">
-                            I am looking for full stack/ frontend opportunities in high impact and motivated team thats disrupting the culture. </p>
+                            I am looking for frontend/full stack opportunities in high impact and motivated team thats disrupting the culture. </p>
 
                         <p className="max-w-xl text-[12px] md:text-lg my-5 md:my-5 mx-3">
                             Shoot me a DM!
