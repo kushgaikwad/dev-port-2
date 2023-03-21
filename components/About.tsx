@@ -33,7 +33,7 @@ const About = (props: Props) => {
                     <span className='underline'> little</span>  background</h4> */}
 
                 
-                <h3 className='text-base'>Hailing from India, I grew up around creative industries. I have a Bachelors's and Master's degree in Computer Science Engineering from the Indian Institute of Technology (IIT) Kharagpur, one of the premier institutes in India. My second master's degree is from Queen Mary University of London; with research focused on blockchain and generative creative tech. </h3>
+                <h3 className='text-base'>Hailing from India, I grew up around creative industries. I have a Bachelors&apos;s and Master&apos;s degree in Computer Science Engineering from the Indian Institute of Technology (IIT) Kharagpur, one of the premier institutes in India. My second master&apos;s degree is from Queen Mary University of London; with research focused on blockchain and generative creative tech. </h3>
                 <h3 className='text-base'>
                 Currently, I am based in London, freelancing as a full stack/frontend developer for some of the most innovative teams in the scene. I am really passionate about elevating culture and community through emergent technologies.</h3>
             </div>
