@@ -3,17 +3,12 @@
 @tailwind utilities;
 
 @layer components{
-    .heroButtonClass{
-        @apply px-6 py-10 border border-white rounded-full uppercase text-xs tracking-widest text-gray-500
-        transition-all hover:border-gray-300 hover:text-gray-300
-    }
-    .contactInput{
-        @apply outline-none bg-gray-200 rounded-sm border-b
-        px-6 py-4 border-gray-300 text-gray-500 placeholder-lime-50 transition-all focus:border-gray-500 focus:text-gray-700 hover:border-gray-800
-    }
+    
+
 }
 
 @layer base {
+
     body {
         font-family: 'Libre Baskerville', serif;
     }

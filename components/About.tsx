@@ -26,14 +26,16 @@ const About = (props: Props) => {
                 }}
                 viewport={{ once: false }}
                 src='/images/musket-headshot.jpg'
-                className='-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]'
+                className='-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px] xl:ml-5 '
             />
-            <div className='space-y-10 px-0 md:px-10'>
-                <h4 className='text-4xl font-semibold'>Here is a
-                    <span className='underline'> little</span>  background</h4>
+            <div className='space-y-10  px-0 md:px-10 md:ml-4'>
+                {/* <h4 className='text-4xl font-semibold'>Here is a
+                    <span className='underline'> little</span>  background</h4> */}
 
                 
-                <h3 className='text-base'>Hailing from India, I grew up around the creative industries. I have a background in building tech products, generative art and musical experiences that spans across traditional platforms and web3. I am really passionate about elevating culture and community through emergent technologies.</h3>
+                <h3 className='text-base'>Hailing from India, I grew up around creative industries. I have a Bachelors's & Master's degree in Computer Science Engineering from the Indian Institute of Technology (IIT) Kharagpur, one of the premier institutes in India. My second master's degree is from Queen Mary University of London; with research focused on blockchain and generative creative tech. </h3>
+                <h3 className='text-base'>
+                Currently, I am based in London, freelancing as a full stack/frontend developer for some of the most innovative teams in the scene. I am really passionate about elevating culture and community through emergent technologies.</h3>
             </div>
         </motion.div>
     )

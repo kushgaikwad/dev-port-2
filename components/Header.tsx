@@ -33,6 +33,7 @@ const Header = (props: Props) => {
                 <SocialIcon url="https://linkedin.com/in/kushal-gaikwad"
                     fgColor='gray'
                     bgColor='transparent' />
+                    
             </motion.div>
 
             <motion.div
