@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import Header from '@/components/Header'
-import Hero3 from '@/components/Hero3'
+import Hero from '@/components/Hero'
 import About from '@/components/About'
-import Contact2 from '@/components/Contact2'
+import Contact from '@/components/Contact'
+
 export default function Home() {
   return (
     // <div className='bg-[rgb(36,36,36)] text-white h-screen'>
@@ -10,15 +11,12 @@ export default function Home() {
       <Head>
         <title>Kush Gaikwad Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet" />
-
+        
       </Head>
 
-      <section id='hero3' className='snap-start'>
+      <section id='hero' className='snap-start'>
         <Header />
-        <Hero3 />
+        <Hero />
       </section>
 
       <section id='about' className='snap-center'>
@@ -26,7 +24,7 @@ export default function Home() {
       </section>
 
       <section id='contact' className='snap-start'>
-        <Contact2 />
+        <Contact />
       </section>
 
     </div>
