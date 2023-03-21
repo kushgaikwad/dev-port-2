@@ -1,5 +1,4 @@
-import React, { useRef } from 'react'
-import { useForm } from "react-hook-form";
+import React from 'react'
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 import { useState } from 'react';
 import { FormEvent } from 'react';
@@ -13,7 +12,7 @@ interface EmailParams {
     message: string;
 }
 
-const Contact2 = (props: Props) => {
+const Contact = (props: Props) => {
 
     const [success, setSuccess] = useState<boolean | null>(null)
 
@@ -56,29 +55,29 @@ const Contact2 = (props: Props) => {
 
     return (
         <div className='h-screen relative flex overflow-hiddens flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0'>
-            <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl mb-10'>
+            <h3 className='absolute top-8 md:top-24 uppercase tracking-[20px] text-gray-500 text-2xl mb-10'>
                 Contact
             </h3>
 
-            <div className='mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 xl:mt-8'>
-                <div className='grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5'>
+            <div className='mx-auto max-w-screen-xl px-4 md:py-16 sm:px-6 lg:px-8 xl:mt-8'>
+                <div className='grid grid-cols-1 gap-x-16  md:gap-y-8 lg:grid-cols-5'>
                     <div className="lg:col-span-2 lg:py-12">
-                        <p className="max-w-xl text-lg mx-3 my-10 mt-20">
+                        <p className="max-w-xl text-[12px] md:text-lg mx-3 my-2 mt-5 md:my-10 md:mt-20">
                             I am looking for full stack/ frontend opportunities in high impact and motivated team thats disrupting the culture. </p>
 
-                        <p className="max-w-xl text-lg my-5 mx-3">
+                        <p className="max-w-xl text-[12px] md:text-lg my-5 md:my-5 mx-3">
                             Shoot me a DM!
                         </p>
 
                     </div>
 
-                    <div className="rounded-lg bg-gray-200 p-8 shadow-lg lg:col-span-3 lg:p-12">
+                    <div className="rounded-lg bg-gray-200 p-4 md:p-8 shadow-lg lg:col-span-3 lg:p-12">
                         {/* <form className="space-y-4" onSubmit={handleSubmit(event)}> */}
-                        <form className="space-y-4" onSubmit={handleSubmit} id="myForm" >
+                        <form className="space-y-2 md:space-y-4" onSubmit={handleSubmit} id="myForm" >
                             <div>
                                 <label className="sr-only" htmlFor='user_name' >Name</label>
                                 <input
-                                    className="w-full rounded-lg border-gray-400 p-3 text-sm"
+                                    className="w-full rounded-lg border-gray-400 p-3 text-[12px] md:text-sm"
                                     placeholder="Name"
                                     type="text"
                                     id="user_name"
@@ -89,7 +88,7 @@ const Contact2 = (props: Props) => {
                             <div>
                                 <label className="sr-only" htmlFor='user_email'>Email</label>
                                 <input
-                                    className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                                    className="w-full rounded-lg border-gray-200 p-3 text-[12px] md:text-sm"
                                     placeholder="Email address"
                                     type="email"
                                     id="user_email"
@@ -99,7 +98,7 @@ const Contact2 = (props: Props) => {
                             <div>
                                 <label className="sr-only" htmlFor='subject' >Subject</label>
                                 <input
-                                    className="w-full rounded-lg border-gray-600 p-3 text-sm"
+                                    className="w-full rounded-lg border-gray-600 p-3 text-[12px] md:text-sm"
                                     placeholder="Subject"
                                     type="text"
                                     id="subject"
@@ -110,17 +109,17 @@ const Contact2 = (props: Props) => {
                                 <label className="sr-only" htmlFor='message' >Message</label>
 
                                 <textarea
-                                    className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                                    className="w-full rounded-lg border-gray-200 p-3 md:p-3 text-[12px] md:text-sm"
                                     placeholder="Message"
-                                    rows={8}
+                                    rows={4}
                                     id="message"
                                     name='message'
                                 ></textarea>
                             </div>
-                            <div className="mt-4">
+                            <div className="mt-1 md:mt-4">
                                 <button
                                     type="submit"
-                                    className="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white "
+                                    className="inline-block w-full rounded-lg bg-black px-5 py-3 ms:py-3 font-medium text-white "
                                 >
                                     Send
                                 </button>
@@ -135,4 +134,4 @@ const Contact2 = (props: Props) => {
     )
 }
 
-export default Contact2
+export default Contact
