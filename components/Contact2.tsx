@@ -3,22 +3,13 @@ import { useForm } from "react-hook-form";
 import emailjs from '@emailjs/browser';
 import { useState } from 'react';
 
+
 type Props = {}
 
-type FormData = {
-    name: string;
-    email: string;
-    subject: string;
-    message: string;
-};
-
 const Contact2 = (props: Props) => {
-    const { register, handleSubmit, formState: { errors } } = useForm<FormData>();
-    const onSubmit = handleSubmit(data => console.log(data));
 
-
-    const [success, setSuccess] = useState(null)
-    const form = useRef()
+    const [success, setSuccess] = useState<boolean | null>(null)
+    const form = useRef<HTMLFormElement>()
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -37,23 +28,23 @@ const Contact2 = (props: Props) => {
 
     return (
         <div className='h-screen relative flex overflow-hiddens flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0'>
-            <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
+            <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl mb-10'>
                 Contact
             </h3>
 
             <div className='mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8'>
                 <div className='grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5'>
                     <div className="lg:col-span-2 lg:py-12">
-                        <p className="max-w-xl text-lg">
+                        <p className="max-w-xl text-lg mx-3 my-10 mt-20">
                             I am looking for full stack/ frontend opportunities in high impact and motivated team thats disrupting the culture. </p>
 
-                        <p className="max-w-xl text-lg my-3">
+                        <p className="max-w-xl text-lg my-5 mx-3">
                             Shoot me a DM!
                         </p>
 
                     </div>
 
-                    <div className="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
+                    <div className="rounded-lg bg-gray-200 p-8 shadow-lg lg:col-span-3 lg:p-12">
                         <form ref={form} className="space-y-4" onSubmit={sendEmail}>
                             <div>
                                 <label className="sr-only" >Name</label>
@@ -100,7 +91,7 @@ const Contact2 = (props: Props) => {
                             <div className="mt-4">
                                 <button
                                     type="submit"
-                                    className="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto"
+                                    className="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white "
                                 >
                                     Send
                                 </button>
