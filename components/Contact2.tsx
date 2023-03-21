@@ -1,29 +1,57 @@
 import React, { useRef } from 'react'
 import { useForm } from "react-hook-form";
-import emailjs from '@emailjs/browser';
+import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 import { useState } from 'react';
-
+import { FormEvent } from 'react';
 
 type Props = {}
+
+// Define the email parameters
+interface EmailParams {
+    user_name: string;
+    user_email: string;
+    message: string;
+}
 
 const Contact2 = (props: Props) => {
 
     const [success, setSuccess] = useState<boolean | null>(null)
-    const form = useRef<HTMLFormElement>()
 
-    const sendEmail = (e) => {
-        e.preventDefault();
+    const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
 
-        emailjs.sendForm('service_4wynsm3', 'template_qccrj54', form.current, '22OB0HoooDVvKie8a')
-            .then((result) => {
-                console.log(result.text);
-                console.log("Message sent!");
-                setSuccess(true)
-                e.target.reset();
-            }, (error) => {
-                setSuccess(false)
-                console.log(error.text);
-            });
+        const form = event.target as HTMLFormElement;
+
+        const emailParams: EmailParams = {
+            user_name: form.user_name.value,
+            user_email: form.user_email.value,
+            message: form.message.value,
+        };
+
+        sendEmail(emailParams);
+        form.reset();
+    }
+
+    async function sendEmail(emailParams: EmailParams) {
+        try {
+            const response: EmailJSResponseStatus = await emailjs.send(
+                'service_4wynsm3',
+                'template_qccrj54',
+                {
+                    user_name: emailParams.user_name,
+                    user_email: emailParams.user_email,
+                    message: emailParams.message,
+                },
+                '22OB0HoooDVvKie8a'
+            )
+            console.log('Email sent!', response);
+            setSuccess(true);
+            //form.target.reset();
+
+        } catch (error) {
+            setSuccess(false);
+            console.error('Error sending email: ', error)
+        }
     };
 
     return (
@@ -45,30 +73,31 @@ const Contact2 = (props: Props) => {
                     </div>
 
                     <div className="rounded-lg bg-gray-200 p-8 shadow-lg lg:col-span-3 lg:p-12">
-                        <form ref={form} className="space-y-4" onSubmit={sendEmail}>
+                        {/* <form className="space-y-4" onSubmit={handleSubmit(event)}> */}
+                        <form className="space-y-4" onSubmit={handleSubmit} id="myForm" >
                             <div>
-                                <label className="sr-only" >Name</label>
+                                <label className="sr-only" htmlFor='user_name' >Name</label>
                                 <input
                                     className="w-full rounded-lg border-gray-400 p-3 text-sm"
                                     placeholder="Name"
                                     type="text"
-                                    id="name"
+                                    id="user_name"
                                     name='user_name'
                                 />
                             </div>
 
                             <div>
-                                <label className="sr-only" >Email</label>
+                                <label className="sr-only" htmlFor='user_email'>Email</label>
                                 <input
                                     className="w-full rounded-lg border-gray-200 p-3 text-sm"
                                     placeholder="Email address"
                                     type="email"
-                                    id="email"
+                                    id="user_email"
                                     name='user_email'
                                 />
                             </div>
                             <div>
-                                <label className="sr-only" >Subject</label>
+                                <label className="sr-only" htmlFor='subject' >Subject</label>
                                 <input
                                     className="w-full rounded-lg border-gray-600 p-3 text-sm"
                                     placeholder="Subject"
@@ -78,7 +107,7 @@ const Contact2 = (props: Props) => {
                                 />
                             </div>
                             <div>
-                                <label className="sr-only" >Message</label>
+                                <label className="sr-only" htmlFor='message' >Message</label>
 
                                 <textarea
                                     className="w-full rounded-lg border-gray-200 p-3 text-sm"
