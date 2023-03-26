@@ -25,7 +25,7 @@ const Header = (props: Props) => {
                 transition={{
                     duration: 1.5,
                 }}
-                className='flex flex-row items-center'>
+                className='flex flex-row items-center '>
                 <SocialIcon url="https://twitter.com/honey_musket"
                     fgColor='white'
                     bgColor='transparent' 

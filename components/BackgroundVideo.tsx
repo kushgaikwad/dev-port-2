@@ -1,17 +1,18 @@
 import React from 'react'
-import { useEffect } from 'react';
-import styles from "../styles/BackgroundVideo.module.css";
 
 type Props = {}
 
 const BackgroundVideo = (props: Props) => {
     return (
-        <div className={styles.videoBackground}>
-          <video autoPlay loop muted>
-            <source src="/images/Kush-hero-video.mp4" type="video/mp4" />
-          </video>
+        //  <div className={styles.videoBackground}>
+        <div className='absolute top-0 left-0 w-full h-screen object-covers -z-1 brightness-50'>
+            <video autoPlay loop muted className='object-cover w-full h-full'>
+                {/* <source src='https://drive.google.com/file/d/1A_fl7rHVldytH-lPJMp9qkciEtOmjD2f/view?usp=share_link4' type="video/mp4" /> */}
+                {/* <source src='https://www.youtube.com/watch?v=po02mFUhRTk' type="video/mp4" /> */}
+                <source src='/images/Kush-hero-video.mp4' type="video/mp4" />
+            </video>
         </div>
-      );
+    );
 }
 
 export default BackgroundVideo;

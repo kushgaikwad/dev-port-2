@@ -55,15 +55,13 @@ const Contact = (props: Props) => {
 
     return (
         <div className='h-screen relative flex overflow-hiddens flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0'>
-            {/* <h3 className='absolute top-8 md:top-24 uppercase tracking-[20px] text-gray-400 text-2xl mb-10'>
-                Contact
-            </h3> */}
-            <h3 className='absolute ml-6 top-[3rem] md:top-24 uppercase tracking-[20px] text-gray-400 text-2xl md:text-[2.5rem]'>Contact</h3>
+           
+            <h3 className='absolute ml-6 top-[3rem] md:top-24 uppercase tracking-[20px] text-gray-400 text-2xl md:text-[2.5rem] xl:top-22'>Contact</h3>
 
-            <div className='mx-auto max-w-screen-xl my-10 px-4 md:py-16 sm:px-6 lg:px-8 xl:mt-8'>
+            <div className='mx-auto max-w-screen-xl my-10 px-4 md:py-16 sm:px-6 lg:px-8 xl:mt-8 lg:mt-5'>
                 <div className='grid grid-cols-1 gap-x-16  md:gap-y-8 lg:grid-cols-5'>
                     <div className="lg:col-span-2 my-8s lg:py-12 lg:leading-[3rem]">
-                        <p className="max-w-xl  text-[0.8rem] md:text-lg mx-3 my-9 mt-[5rem] md:my-10 md:mt-20">
+                        <p className="max-w-xl  text-[0.8rem] md:text-lg mx-3 my-9 mt-[5rem] md:my-10 md:mt-20 xl:mt-[7rem]">
                             I am looking for frontend/full stack opportunities in high impact and motivated team thats disrupting the culture. </p>
 
                         <p className="max-w-xl text-[0.8rem] md:text-lg my-9 md:my-5 mx-3">
@@ -72,7 +70,7 @@ const Contact = (props: Props) => {
 
                     </div>
 
-                    <div className="rounded-lg bg-gray-200 p-4 md:p-8 shadow-lg lg:col-span-3 lg:p-12">
+                    <div className="rounded-lg bg-gray-200 p-4 md:p-8 shadow-lg lg:col-span-3 lg:p-12 lg:mt-14">
                         {/* <form className="space-y-4" onSubmit={handleSubmit(event)}> */}
                         <form className="space-y-2 md:space-y-4" onSubmit={handleSubmit} id="myForm" >
                             <div>
