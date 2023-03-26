@@ -55,17 +55,18 @@ const Contact = (props: Props) => {
 
     return (
         <div className='h-screen relative flex overflow-hiddens flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0'>
-            <h3 className='absolute top-8 md:top-24 uppercase tracking-[20px] text-gray-500 text-2xl mb-10'>
+            {/* <h3 className='absolute top-8 md:top-24 uppercase tracking-[20px] text-gray-400 text-2xl mb-10'>
                 Contact
-            </h3>
+            </h3> */}
+            <h3 className='absolute ml-6 top-[3rem] md:top-24 uppercase tracking-[20px] text-gray-400 text-2xl md:text-[2.5rem]'>Contact</h3>
 
-            <div className='mx-auto max-w-screen-xl px-4 md:py-16 sm:px-6 lg:px-8 xl:mt-8'>
+            <div className='mx-auto max-w-screen-xl my-10 px-4 md:py-16 sm:px-6 lg:px-8 xl:mt-8'>
                 <div className='grid grid-cols-1 gap-x-16  md:gap-y-8 lg:grid-cols-5'>
-                    <div className="lg:col-span-2 lg:py-12">
-                        <p className="max-w-xl text-[12px] md:text-lg mx-3 my-2 mt-5 md:my-10 md:mt-20">
+                    <div className="lg:col-span-2 my-8s lg:py-12 lg:leading-[3rem]">
+                        <p className="max-w-xl  text-[0.8rem] md:text-lg mx-3 my-9 mt-[5rem] md:my-10 md:mt-20">
                             I am looking for frontend/full stack opportunities in high impact and motivated team thats disrupting the culture. </p>
 
-                        <p className="max-w-xl text-[12px] md:text-lg my-5 md:my-5 mx-3">
+                        <p className="max-w-xl text-[0.8rem] md:text-lg my-9 md:my-5 mx-3">
                             Shoot me a DM!
                         </p>
 
@@ -77,7 +78,7 @@ const Contact = (props: Props) => {
                             <div>
                                 <label className="sr-only" htmlFor='user_name' >Name</label>
                                 <input
-                                    className="w-full rounded-lg border-gray-400 p-3 text-[12px] md:text-sm"
+                                    className="w-full rounded-lg border-gray-400 p-3 text-[0.8rem] md:text-sm"
                                     placeholder="Name"
                                     type="text"
                                     id="user_name"
@@ -88,7 +89,7 @@ const Contact = (props: Props) => {
                             <div>
                                 <label className="sr-only" htmlFor='user_email'>Email</label>
                                 <input
-                                    className="w-full rounded-lg border-gray-200 p-3 text-[12px] md:text-sm"
+                                    className="w-full rounded-lg border-gray-200 p-3 text-[0.8rem] md:text-sm"
                                     placeholder="Email address"
                                     type="email"
                                     id="user_email"
@@ -98,7 +99,7 @@ const Contact = (props: Props) => {
                             <div>
                                 <label className="sr-only" htmlFor='subject' >Subject</label>
                                 <input
-                                    className="w-full rounded-lg border-gray-600 p-3 text-[12px] md:text-sm"
+                                    className="w-full rounded-lg border-gray-600 p-3 text-[0.8rem] md:text-sm"
                                     placeholder="Subject"
                                     type="text"
                                     id="subject"
@@ -109,7 +110,7 @@ const Contact = (props: Props) => {
                                 <label className="sr-only" htmlFor='message' >Message</label>
 
                                 <textarea
-                                    className="w-full rounded-lg border-gray-200 p-3 md:p-3 text-[12px] md:text-sm"
+                                    className="w-full rounded-lg border-gray-200 p-3 md:p-3 text-[0.8rem] md:text-sm"
                                     placeholder="Message"
                                     rows={4}
                                     id="message"
@@ -119,7 +120,7 @@ const Contact = (props: Props) => {
                             <div className="mt-1 md:mt-4">
                                 <button
                                     type="submit"
-                                    className="inline-block w-full rounded-lg bg-black px-5 py-3 ms:py-3 font-medium text-white "
+                                    className="inline-block w-full rounded-lg bg-black px-5 py-3 ms:py-3 font-medium text-white text-[0.8rem] "
                                 >
                                     Send
                                 </button>
