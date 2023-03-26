@@ -7,7 +7,7 @@ type Props = {}
 
 const Header = (props: Props) => {
     return (
-        <header className=' top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center'>
+        <header className=' top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center xl:m-10'>
             <motion.div
                 initial={
                     {
@@ -27,15 +27,23 @@ const Header = (props: Props) => {
                 }}
                 className='flex flex-row items-center'>
                 <SocialIcon url="https://twitter.com/honey_musket"
-                    fgColor='gray'
-                    bgColor='transparent' />
-                <SocialIcon url="https://linkedin.com/in/kushal-gaikwad"
-                    fgColor='gray'
-                    bgColor='transparent' />
-                    <SocialIcon url="https://github.com/kushgaikwad"
-                    fgColor='gray'
-                    bgColor='transparent' />
+                    fgColor='white'
+                    bgColor='transparent' 
+                    target="_blank"/>
                     
+                <SocialIcon url="https://www.instagram.com/honey_musket/"
+                    fgColor='white'
+                    bgColor='transparent'
+                    target="_blank" />
+                <SocialIcon url="https://linkedin.com/in/kushal-gaikwad"
+                    fgColor='white'
+                    bgColor='transparent'
+                    target="_blank" />
+                <SocialIcon url="https://github.com/kushgaikwad"
+                    fgColor='white'
+                    bgColor='transparent'
+                    target="_blank" />
+
             </motion.div>
 
             <motion.div
@@ -52,15 +60,15 @@ const Header = (props: Props) => {
                 transition={{
                     duration: 1.5,
                 }}
-                className='flex flex-row items-center text-gray-400 cursor-pointer'>           
-                    <SocialIcon
-                        className='cursor-pointer'
-                        network='email'
-                        fgColor='gray'
-                        bgColor='transparent' />  
-                    <Link href="#contact">
-                        <p className='uppercase hidden md:inline-flex text-sm text-gray-400'>Lets Link Up</p>
-                    </Link>     
+                className='flex flex-row items-center text-white cursor-pointer'>
+                <SocialIcon
+                    className='cursor-pointer'
+                    network='email'
+                    fgColor='white'
+                    bgColor='transparent' />
+                <Link href="#contact">
+                    <p className='uppercase hidden md:inline-flex text-sm text-white'>Lets Link Up</p>
+                </Link>
             </motion.div>
         </header >
     )
