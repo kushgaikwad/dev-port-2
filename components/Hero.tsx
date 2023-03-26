@@ -1,20 +1,24 @@
 import React from 'react'
+import BackgroundVideo from './BackgroundVideo'
 import { motion } from "framer-motion"
+import Header from './Header'
+
 
 type Props = {}
 
 function Hero({ }: Props) {
 
     return (
-        <div className='h-screen flex flex-col '>
-           
+        <div className='h-screen relative'>
+            <BackgroundVideo />
+            <Header/>
             <motion.div initial={
-                    {
-                        x: -500,
-                        opacity: 0,
-                        scale: 0.2
-                    }
+                {
+                    x: -500,
+                    opacity: 0,
+                    scale: 0.2
                 }
+            }
                 animate={{
                     x: 0,
                     opacity: 1,
@@ -23,15 +27,14 @@ function Hero({ }: Props) {
                 }}
                 transition={{
                     duration: 1,
-                }} className='flex flex-col sticky text-2xl md:text-5xl text-right mr-6 mt-80 z-0 xl:text-7xl xl:mr-20 xl:mt-96'>
+                }} className='flex flex-col  border-white text-white  sticky text-[2.3rem] leading-[2.8rem] text-right mr-6 mt-[450px] z-0 md:text-5xl md:leading-[3.5rem]  xl:text-[88px] xl:leading-[6rem] xl:mr-20 xl:mt-96'>
                 <h1>Hi.</h1>
                 <h1>I am Kush.</h1>
                 <h1>A Creative Technologist.</h1>
             </motion.div>
-
-        </div>
+        </div >
 
     )
 }
 
-export default Hero
+export default Hero;
