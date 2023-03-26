@@ -27,7 +27,7 @@ function Hero({ }: Props) {
                 }}
                 transition={{
                     duration: 1,
-                }} className='flex flex-col  border-white text-white  sticky text-[2.3rem] leading-[2.8rem] text-right mr-6 mt-[450px] z-0 md:text-5xl md:leading-[3.5rem]  xl:text-[88px] xl:leading-[6rem] xl:mr-20 xl:mt-96'>
+                }} className='flex flex-col  border-white text-white  sticky text-[1.7rem] leading-[2.4rem] text-right mr-6 mt-[23rem] z-0 md:text-[3.4rem] md:mt-[40rem] md:leading-[3.5rem]  xl:text-[88px] xl:leading-[6rem] xl:mr-20 xl:mt-96'>
                 <h1>Hi.</h1>
                 <h1>I am Kush.</h1>
                 <h1>A Creative Technologist.</h1>
