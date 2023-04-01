@@ -2,12 +2,13 @@ import React from 'react'
 import { SocialIcon } from 'react-social-icons';
 import { motion } from "framer-motion"
 import Link from 'next/link'
+import { FaBeer } from "react-icons/fa";
 
 type Props = {}
 
 const Header = (props: Props) => {
     return (
-        <header className=' top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center xl:m-10'>
+        <header className='top-0 z-20 flex justify-between p-5 mx-auto xl:items-center xl:m-5'>
             <motion.div
                 initial={
                     {
@@ -28,9 +29,9 @@ const Header = (props: Props) => {
                 className='flex flex-row items-center '>
                 <SocialIcon url="https://twitter.com/honey_musket"
                     fgColor='white'
-                    bgColor='transparent' 
-                    target="_blank"/>
-                    
+                    bgColor='transparent'
+                    target="_blank" />
+
                 <SocialIcon url="https://www.instagram.com/honey_musket/"
                     fgColor='white'
                     bgColor='transparent'
@@ -39,10 +40,12 @@ const Header = (props: Props) => {
                     fgColor='white'
                     bgColor='transparent'
                     target="_blank" />
+
                 <SocialIcon url="https://github.com/kushgaikwad"
                     fgColor='white'
                     bgColor='transparent'
                     target="_blank" />
+
 
             </motion.div>
 
@@ -60,14 +63,16 @@ const Header = (props: Props) => {
                 transition={{
                     duration: 1.5,
                 }}
-                className='flex flex-row items-center text-white cursor-pointer'>
+                className='flex flex-row items-center cursor-pointer'>
                 <SocialIcon
                     className='cursor-pointer'
                     network='email'
                     fgColor='white'
                     bgColor='transparent' />
-                <Link href="#contact">
-                    <p className='uppercase hidden md:inline-flex text-sm text-white'>Lets Link Up</p>
+                {/* <div className='z-50 text-white'>LINK UP</div> */}
+                <Link href="#contact" className='z-50'>
+                    <h1 className='hidden mr-5 text-sm text-white uppercase sm:inline-flex'>Lets Link Up</h1>
+                   
                 </Link>
             </motion.div>
         </header >

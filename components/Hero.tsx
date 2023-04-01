@@ -9,7 +9,7 @@ type Props = {}
 function Hero({ }: Props) {
 
     return (
-        <div className='h-screen relative'>
+        <div className='relative h-screen'>
             <BackgroundVideo />
             <Header/>
             <motion.div initial={
@@ -27,7 +27,12 @@ function Hero({ }: Props) {
                 }}
                 transition={{
                     duration: 1,
-                }} className='flex flex-col  border-white text-white  sticky text-[1.7rem] leading-[2.4rem] text-right mr-6 mt-[23rem] z-0 md:text-[3.4rem] md:mt-[40rem] md:leading-[3.5rem]  xl:text-[88px] xl:leading-[6rem] xl:mr-20 xl:mt-96'>
+                }}
+                //  className='flex flex-col  border-white text-white  sticky text-[1.7rem] leading-[2.4rem] text-right mr-6 mt-[23rem] z-0 md:text-[3.4rem] md:mt-[40rem] md:leading-[3.5rem]  xl:text-[88px] xl:leading-[6rem] xl:mr-20 xl:mt-96'
+                 className='flex flex-col  border-white text-white  sticky text-[2.1rem] leading-[2.4rem] text-right mr-6 mt-[30rem] z-0 sm:text-[2.7rem] md:text-[3.5rem] lg:text-[4.3rem] lg:leading-[4.8rem] sm:mt-[43rem] sm:leading-[3.5rem] md:mt-[50rem] md:leading-[4.3rem] lg:leading-[2rem] lg:mt-[20rem]   xl:text-[88px] xl:leading-[6rem] md:mr-8 lg:mr-9 xl:mr-16 xl:mt-[25rem]'
+                 
+                 
+                 >
                 <h1>Hi.</h1>
                 <h1>I am Kush.</h1>
                 <h1>A Creative Technologist.</h1>
