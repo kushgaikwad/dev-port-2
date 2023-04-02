@@ -32,16 +32,21 @@ const Contact = (props: Props) => {
     }
 
     async function sendEmail(emailParams: EmailParams) {
+        const emailJSServiceID = process.env.EMAILJS_SERVICE_ID!
+        const emailJSTemplateID = process.env.EMAILJS_TEMPLATE_ID!
+        const emailJSPublicKey = process.env.EMAILJS_PUBLIC_KEY!
+
+
         try {
             const response: EmailJSResponseStatus = await emailjs.send(
-                'service_4wynsm3',
-                'template_qccrj54',
+             emailJSServiceID  ,
+                emailJSTemplateID,
                 {
                     user_name: emailParams.user_name,
                     user_email: emailParams.user_email,
                     message: emailParams.message,
                 },
-                '22OB0HoooDVvKie8a'
+                emailJSPublicKey
             )
             console.log('Email sent!', response);
             setSuccess(true);
@@ -81,6 +86,7 @@ const Contact = (props: Props) => {
                                     type="text"
                                     id="user_name"
                                     name='user_name'
+                                    required
                                 />
                             </div>
 
@@ -92,6 +98,7 @@ const Contact = (props: Props) => {
                                     type="email"
                                     id="user_email"
                                     name='user_email'
+                                    required
                                 />
                             </div>
                             <div>
@@ -102,6 +109,7 @@ const Contact = (props: Props) => {
                                     type="text"
                                     id="subject"
                                     name='subject'
+                                    required
                                 />
                             </div>
                             <div>
@@ -113,6 +121,7 @@ const Contact = (props: Props) => {
                                     rows={4}
                                     id="message"
                                     name='message'
+                                    required
                                 ></textarea>
                             </div>
                             <div className="mt-1 md:mt-4">
