@@ -10,7 +10,7 @@ type Props = {}
 const Header = (props: Props) => {
     return (
         <Wrapper className="">
-            <header className='top-0 z-20 flex justify-between p-5 mx-auto xl:items-center xl:m-5'>
+            <header className='top-0 z-20 flex justify-between py-5 mx-auto xl:items-center xl:my-5'>
                 <motion.div
                     initial={
                         {
@@ -71,14 +71,14 @@ const Header = (props: Props) => {
                         network='email'
                         fgColor='white'
                         bgColor='transparent' />
-                    {/* <div className='z-50 text-white'>LINK UP</div> */}
                     <Link href="#contact" className='z-50'>
-                        <h1 className='hidden mr-5 text-sm text-white uppercase sm:inline-flex'>Lets Link Up</h1>
+                        <h1 className='hidden text-sm text-white uppercase sm:inline-flex'>Lets Link Up</h1>
 
                     </Link>
                 </motion.div>
             </header >
-        </Wrapper>
+            </Wrapper>
+    
     )
 }
 
