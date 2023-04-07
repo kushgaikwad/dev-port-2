@@ -9,7 +9,7 @@ type Props = {}
 
 const Header = (props: Props) => {
     return (
-        <Wrapper className="">
+        // <Wrapper className="">
             <header className='top-0 z-20 flex justify-between py-5 mx-auto xl:items-center xl:my-5'>
                 <motion.div
                     initial={
@@ -77,7 +77,7 @@ const Header = (props: Props) => {
                     </Link>
                 </motion.div>
             </header >
-            </Wrapper>
+            // </Wrapper>
     
     )
 }
