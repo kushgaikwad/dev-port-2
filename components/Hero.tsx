@@ -14,7 +14,7 @@ function Hero({ }: Props) {
             <BackgroundVideo/>
             <Wrapper className="relative h-screen">
                 <Header />
-                <div className='flex flex-col justify-end text-right text-white h-3/4 text-[1.8rem] sm:text-[2.7rem] md:text-[3.1rem] lg:text-[4.3rem] lg:leading-[4.8rem] sm:leading-[3.5rem] md:leading-[4.3rem] lg:leading-[2rem] xl:text-[88px] xl:leading-[6rem]'>
+                <div className='flex flex-col justify-end text-right text-white h-3/4 text-[1.6rem] sm:text-[2.7rem] md:text-[3.1rem] lg:text-[4.3rem] lg:leading-[4.8rem] sm:leading-[3.5rem] md:leading-[4.3rem] lg:leading-[2rem] xl:text-[88px] xl:leading-[6rem]'>
                     <h1>Hi.</h1>
                     <h1>I am Kush.</h1>
                     <h1>A Creative Technologist.</h1>
