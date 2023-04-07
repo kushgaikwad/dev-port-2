@@ -68,9 +68,9 @@ const Contact = (props: Props) => {
                 <h1 className='uppercase h-1/6 tracking-[20px] flex jusify-center items-center text-gray-400 text-xl sm:text-[2rem] md:text-[2rem]'>CONTACT</h1>
 
 
-                <div className='px-4 md:py-16 sm:px-6 lg:px-8 xl:mt-8 lg:mt-5 h-5/6' >
+                <div className='px-4 h-5/6' >
                     <div className='grid grid-cols-1 gap-x-16 md:gap-y-8 lg:grid-cols-5'>
-                        <div className="lg:col-span-2 my-8s lg:py-12 lg:leading-[3rem]">
+                        <div className="lg:col-span-2 lg:py-12 lg:leading-[3rem]">
                             <p className=" text-[0.8rem] md:text-lg mx-3 my-9 mt-[5rem] md:my-10 md:mt-20 xl:mt-[7rem]">
                                 I am looking for frontend/full stack opportunities in high impact and motivated team thats disrupting the culture. </p>
 
