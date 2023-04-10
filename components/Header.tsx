@@ -2,33 +2,15 @@ import React from 'react'
 import { SocialIcon } from 'react-social-icons';
 import { motion } from "framer-motion"
 import Link from 'next/link'
-import { FaBeer } from "react-icons/fa";
-import Wrapper from './Wrapper';
+import { slideAnimation } from '@/config/motion';
 
 type Props = {}
 
 const Header = (props: Props) => {
     return (
-        // <Wrapper className="">
+     
             <header className='top-0 z-20 flex justify-between py-5 mx-auto xl:items-center xl:my-5'>
-                <motion.div
-                    initial={
-                        {
-                            x: -500,
-                            opacity: 0,
-                            scale: 0.5
-                        }
-                    }
-                    animate={{
-                        x: 0,
-                        opacity: 1,
-                        scale: 1
-
-                    }}
-                    transition={{
-                        duration: 1.5,
-                    }}
-                    className='flex flex-row items-center '>
+                <motion.div className='flex flex-row items-center' {...slideAnimation('left')}>
                     <SocialIcon url="https://twitter.com/honey_musket"
                         fgColor='white'
                         bgColor='transparent'
@@ -51,21 +33,7 @@ const Header = (props: Props) => {
 
                 </motion.div>
 
-                <motion.div
-                    initial={{
-                        x: 500,
-                        opacity: 0,
-                        scale: 0.5
-                    }}
-                    animate={{
-                        x: 0,
-                        opacity: 1,
-                        scale: 1
-                    }}
-                    transition={{
-                        duration: 1.5,
-                    }}
-                    className='flex flex-row items-center cursor-pointer'>
+                <motion.div className='flex flex-row items-center cursor-pointer' {...slideAnimation('right')}>
                     <SocialIcon
                         className='cursor-pointer'
                         network='email'
