@@ -19,7 +19,7 @@ type Props = {
 const ProjectCard = ({ info }: Props) => {
     return (
         <article
-            className="flex mx-2 transition bg-white hover:shadow-xl dark:bg-[#2f3033] dark:shadow-gray-800/25 hover:scale-105"
+            className="flex mx-2 transition bg-white hover:shadow-xl dark:bg-[#2f3033] dark:shadow-gray-800/25 hover:scale-105 rounded-xl"
         >
             <div className=" p-2 [writing-mode:_vertical-lr]">
                 <time
@@ -38,7 +38,7 @@ const ProjectCard = ({ info }: Props) => {
             </div>
 
         
-            <div className="relative hidden overflow-hidden sm:block sm:basis-56">
+            <div className="relative hidden overflow-hidden rounded-md sm:block sm:basis-56">
                 <Image
                     alt="Guitar" fill
                     src={info.imageUrl}
@@ -63,10 +63,10 @@ const ProjectCard = ({ info }: Props) => {
                     </p>
                 </div>
 
-                <div className="sm:flex sm:items-end sm:justify-end">
+                <div className="sm:flex sm:items-end sm:justify-end ">
                     <Link
                         href={info.demoLink} target="_blank"
-                        className="block px-5 py-3 text-xs font-bold text-center text-[#423f3f] uppercase transition bg-gray-400 hover:bg-[#ffffff]"
+                        className="block px-5 py-3 text-xs font-bold text-center text-[#423f3f] uppercase transition bg-gray-400 hover:bg-[#ffffff] rounded-md"
                     >
                         DEMO
                     </Link>
