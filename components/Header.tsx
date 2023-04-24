@@ -9,7 +9,7 @@ type Props = {}
 const Header = (props: Props) => {
     return (
      
-            <header className='top-0 z-20 flex justify-between py-5 mx-auto xl:items-center xl:my-5'>
+            <header className='top-0 z-20 flex justify-between py-5 mx-auto xl:items-center xl:mb-5'>
                 <motion.div className='flex flex-row items-center' {...slideAnimation('left')}>
                     <SocialIcon url="https://twitter.com/honey_musket"
                         fgColor='white'
