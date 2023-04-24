@@ -14,18 +14,18 @@ const Header = (props: Props) => {
                     <SocialIcon url="https://twitter.com/honey_musket"
                         fgColor='white'
                         bgColor='transparent'
-                        target="_blank" />
+                        target="_blank" className='hover:scale-125'/>
 
-                    <SocialIcon url="https://www.instagram.com/honey_musket/"
+                    <SocialIcon className='hover:scale-125'url="https://www.instagram.com/honey_musket/"
                         fgColor='white'
                         bgColor='transparent'
                         target="_blank" />
-                    <SocialIcon url="https://linkedin.com/in/kushal-gaikwad"
+                    <SocialIcon className='hover:scale-125'url="https://linkedin.com/in/kushal-gaikwad"
                         fgColor='white'
                         bgColor='transparent'
                         target="_blank" />
 
-                    <SocialIcon url="https://github.com/kushgaikwad"
+                    <SocialIcon className='hover:scale-125'url="https://github.com/kushgaikwad"
                         fgColor='white'
                         bgColor='transparent'
                         target="_blank" />
@@ -35,12 +35,12 @@ const Header = (props: Props) => {
 
                 <motion.div className='flex flex-row items-center cursor-pointer' {...slideAnimation('right')}>
                     <SocialIcon
-                        className='cursor-pointer'
+                        className='cursor-pointer '
                         network='email'
                         fgColor='white'
                         bgColor='transparent' />
                     <Link href="#contact" className='z-50'>
-                        <h1 className='hidden text-sm text-white uppercase sm:inline-flex'>Lets Link Up</h1>
+                        <h1 className='hidden text-sm text-white uppercase sm:inline-flex hover:scale-110'>Lets Link Up</h1>
 
                     </Link>
                 </motion.div>
