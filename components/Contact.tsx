@@ -66,7 +66,7 @@ const Contact = (props: Props) => {
 
                 <div className='px-4 h-5/6' >
                     <div className='grid grid-cols-1 gap-x-16 md:gap-y-8 lg:grid-cols-5'>
-                        <div className="lg:col-span-2 lg:py-12 lg:leading-[3rem]">
+                        <div className="lg:col-span-2 lg:py-12 lg:leading-[3rem] text-white">
                             <p className=" text-[0.8rem] md:text-lg mx-3  md:mt-[5rem] md:my-10 md:mt-20 xl:mt-[7rem]">
                                 I am looking for frontend/full stack opportunities in high impact and motivated team thats disrupting the culture. </p>
 
@@ -76,7 +76,7 @@ const Contact = (props: Props) => {
 
                         </div>
 
-                        <div className="p-4 bg-gray-200 rounded-lg shadow-lg md:p-8 lg:col-span-3 lg:p-12 lg:mt-14">
+                        <div className="p-4 bg-gray-400 rounded-lg shadow-lg md:p-8 lg:col-span-3 lg:p-12 lg:mt-14">
                             <form className="space-y-2 md:space-y-4" onSubmit={handleSubmit} id="myForm" >
                                 <div>
                                     <label className="sr-only" htmlFor='user_name' >Name</label>

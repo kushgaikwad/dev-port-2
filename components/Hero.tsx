@@ -3,7 +3,9 @@ import BackgroundVideo from './BackgroundVideo'
 import { AnimatePresence, motion } from "framer-motion"
 import Header from './Header'
 import Wrapper from './Wrapper'
-import { headTextAnimation } from '@/config/motion'
+import { headTextAnimation, slideAnimation } from '@/config/motion'
+import { Player } from '@lottiefiles/react-lottie-player';
+
 
 type Props = {}
 
@@ -19,6 +21,13 @@ function Hero({ }: Props) {
                         <h1>Hi.</h1>
                         <h1>I am Kush.</h1>
                         <h1>A Creative Technologist.</h1>
+                    </motion.div>
+
+                    <motion.div className='mt-10 md:mt-24 lg:mt-10' {...slideAnimation('up')}>
+                    <Player
+                        src='https://assets6.lottiefiles.com/packages/lf20_dgvlk8pz.json'
+                        className="player" speed={1} loop autoplay style={{ height: '35px', width: '35px'}}
+                    />
                     </motion.div>
                 </AnimatePresence>
             </Wrapper>

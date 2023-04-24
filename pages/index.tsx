@@ -2,26 +2,26 @@ import Head from 'next/head'
 import Hero from '@/components/Hero'
 import About from '@/components/About'
 import Contact from '@/components/Contact'
-import { AnimatePresence } from 'framer-motion'
 
 export default function Home() {
   return (
   
-      <div className='z-0 h-screen overflow-x-hidden snap-y snap-mandatory '>
+        // <div className='z-0 h-screen overflow-x-hidden snap-y snap-mandatory '>
+         <div className='z-0 overflow-x-hidden overflow-y-hidden '>
         <Head>
           <title>Kush Gaikwad Portfolio</title>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Head>
 
-        <section id='hero' className='snap-start '>
+        <section id='hero' className='snap-start'>
           <Hero />
         </section>
 
-        <section id='about' className='snap-center '>
+        <section id='about' className='bg-black'>
           <About />
         </section>
 
-        <section id='contact' className='snap-end'>
+        <section id='contact' className='bg-black'>
           <Contact />
         </section>
 
