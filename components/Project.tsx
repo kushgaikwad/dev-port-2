@@ -31,8 +31,6 @@ const Project = (props: Props) => {
 
                 </Link>
             </div>
-
-
         </div>
     );
 };

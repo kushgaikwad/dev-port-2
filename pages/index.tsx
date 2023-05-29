@@ -9,7 +9,6 @@ import Project from '@/components/Project'
 export default function Home() {
   return (
   
-        // <div className='z-0 h-screen overflow-x-hidden snap-y snap-mandatory '>
          <div className='z-0 overflow-x-hidden overflow-y-hidden '>
         <Head>
           <title>Kush Gaikwad Portfolio</title>
@@ -32,8 +31,6 @@ export default function Home() {
         <section id='contact' className='bg-black'>
           <Contact />
         </section>
-
-     
 
       </div>
    

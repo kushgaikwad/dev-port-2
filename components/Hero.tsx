@@ -22,13 +22,6 @@ function Hero({ }: Props) {
                         <h1>I am Kush.</h1>
                         <h1>A Creative Technologist.</h1>
                     </motion.div>
-
-                    {/* <motion.div className='mt-6 md:mt-24 lg:mt-10' {...slideAnimation('up')}>
-                    <Player
-                        src='https://assets6.lottiefiles.com/packages/lf20_dgvlk8pz.json'
-                        className="player" speed={1} loop autoplay style={{ height: '35px', width: '35px'}}
-                    />
-                    </motion.div> */}
                 </AnimatePresence>
             </Wrapper>
         </div>

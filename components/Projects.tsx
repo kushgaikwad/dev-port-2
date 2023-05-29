@@ -1,7 +1,6 @@
 import { AnimatePresence } from 'framer-motion'
 import React from 'react'
 import Project from './Project'
-import ProjectCard from './ProjectCard'
 import Wrapper from './Wrapper'
 
 type Props = {}
@@ -44,20 +43,12 @@ const Projects = (props: Props) => {
                     <h1 className='uppercase tracking-[20px] flex jusify-center items-center text-gray-400 text-xl sm:text-[2rem] md:text-[2rem] mb-24'>PROJECTS</h1>
 
                     <div className='flex flex-col mb-8 gap-28'>
-                       
-{/* 
-                        {projects.map((project) => (
-                            <ProjectCard info={project} key={project.title} />)
-                        )} */}
                          {projects.map((project) => (
                             <Project {...project} key={project.title} />)
                         )}
-
                     </div>
-
                 </div>
             </AnimatePresence>
-
         </Wrapper>
     )
 }
