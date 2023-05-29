@@ -21,11 +21,11 @@ const Project = (props: Props) => {
             </h3>
             <p className='text-lg sm:text-md text-slate-300'>{props.description}</p>
             <div className='flex flex-wrap gap-10'>
-                <Link target="_blank" href={props.demoLink} ><button className="px-4 w-[7rem] py-2 font-bold text-white border-b-4 rounded  border-slate-800 bg-slate-500 hover:bg-slate-600 hover:border-slate-900">
+                <Link target="_blank" href={props.demoLink} ><button className="px-4 w-[7rem] py-2 font-bold text-black rounded   bg-[#d89078] hover:bg-[#ce8870] ">
                     Demo
                 </button>
                 </Link>
-                <Link target="_blank" href={props.githubLink} ><button className="px-4 w-[10rem] py-2 font-bold text-white border-b-4 rounded  border-slate-800 bg-slate-500 hover:bg-slate-600 hover:border-slate-900">
+                <Link target="_blank" href={props.githubLink} ><button className="px-4 w-[7rem] py-2 font-bold text-black rounded   bg-[#d89078] hover:bg-[#ce8870] ">
                     Code
                 </button>
 
