@@ -3,6 +3,7 @@ import Hero from '@/components/Hero'
 import About from '@/components/About'
 import Contact from '@/components/Contact'
 import Projects from '@/components/Projects'
+import Project from '@/components/Project'
 
 
 export default function Home() {
@@ -31,6 +32,8 @@ export default function Home() {
         <section id='contact' className='bg-black'>
           <Contact />
         </section>
+
+     
 
       </div>
    

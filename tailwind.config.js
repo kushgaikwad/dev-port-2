@@ -16,9 +16,6 @@ module.exports = {
         sans: ['var(--font-libre)', ...fontFamily.sans],
       },
     },
-    plugins: [
-      require("@tailwindcss/forms")
-     
-    ],
+    plugins: [require("@tailwindcss/forms")],
   },
 };
