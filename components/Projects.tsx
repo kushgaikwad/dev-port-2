@@ -26,7 +26,7 @@ const projects = [{
     description: 'Developed a p2e idle staking game with custom ERC20 tokens on mumbai polygon testnet with EIP-4337 smart wallet functionality',
     imageUrl: 'https://res.cloudinary.com/dvszxda1u/image/upload/v1682329565/Screenshot_2023-04-24_at_3.15.59_PM_lrp4x0.png',
     githubLink: 'https://github.com/kushgaikwad/chad-p2e-1',
-    demoLink: 'https://github.com/KUSHGAIKWAD/REACTJS-CHROME-EXTENSION'
+    demoLink: 'https://chad-p2e-1.vercel.app/'
 },
 {
     id: 4,
