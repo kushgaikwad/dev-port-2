@@ -13,3 +13,9 @@
         font-family: 'Libre Baskerville', serif;
     }
 }
+
+@layer components {
+    .btn-scaleup {
+      @apply transition-all hover:scale-125;
+    }
+  }
