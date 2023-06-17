@@ -1,0 +1,54 @@
+.body {
+    transform: perspective(2000px) rotateY(20deg) rotateX(20deg);
+}
+
+.textContainer {
+    transform-style: preserve-3d;
+    transition: all 0.3s;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    width: max-content;
+    flex-direction: column;
+    margin: 0 0 0 auto;
+    cursor: default;
+}
+
+.textContainer:hover {
+    transform: rotateX(90deg);
+}
+
+.textContainer .primary {
+    transform-origin: top;
+    opacity: 1;
+}
+
+.textContainer:hover .primary {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.textContainer .secondary {
+    transform: rotateX(-90deg) translateY(2.5rem);
+    opacity: 0;
+    text-align: end;
+    transform-origin: bottom center;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #ae9eff,
+        0 0 82px #ae9eff,
+        0 0 92px #ae9eff,
+        0 0 102px #ae9eff,
+        0 0 151px #ae9eff;
+   
+}
+
+.textContainer:hover .secondary {
+    opacity: 1;
+}
