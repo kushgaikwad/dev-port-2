@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BsArrowUpRight, BsGithub } from 'react-icons/bs'
 
 type Props = {
     id: number,
@@ -21,12 +22,14 @@ const Project = (props: Props) => {
             </h3>
             <p className='text-lg sm:text-md text-slate-300'>{props.description}</p>
             <div className='flex flex-wrap gap-10'>
-                <Link target="_blank" href={props.demoLink} ><button className="px-4 w-[7rem] py-2 font-bold text-black rounded   bg-[#d89078] hover:bg-[#ce8870] hover:scale-110 transition-all ">
+                <Link target="_blank" href={props.demoLink} ><button className="px-4 w-[7rem] py-2 flex justify-center gap-2 items-center font-bold text-black rounded   bg-[#d89078] hover:bg-[#d6957f] hover:scale-105 transition-all ">
                     Demo
+                    <BsArrowUpRight />
                 </button>
                 </Link>
-                <Link target="_blank" href={props.githubLink} ><button className="px-4 w-[7rem] py-2 font-bold text-black rounded   bg-[#d89078] hover:bg-[#ce8870]  hover:scale-110 transition-all ">
+                <Link target="_blank" href={props.githubLink} ><button className="px-4 flex items-center justify-center gap-2 w-[7rem] py-2 font-bold text-black rounded   bg-[#d89078] hover:bg-[#d6957f]  hover:scale-105 transition-all ">
                     Code
+                    <BsGithub/>
                 </button>
 
                 </Link>
