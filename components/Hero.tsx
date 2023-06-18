@@ -33,15 +33,11 @@ function Hero({ }: Props) {
             <Wrapper className={`relative h-screen ${styles.container}`} >
                 <AnimatePresence>
                     <Header />
-                    {/* <motion.div ref={plane} className='flex relative  flex-col justify-end text-right text-white h-3/4 text-[1.6rem] sm:text-[2.7rem] md:text-[3.1rem] lg:text-[4.3rem] lg:leading-[4.8rem] sm:leading-[3.5rem] md:leading-[4.3rem] xl:text-[88px] xl:leading-[6rem]' {...headTextAnimation}> */}
-
                     <motion.div ref={plane} className={`text-6xl text-[1.5rem] sm:text-[2.7rem] md:text-[3.1rem] lg:text-[4.3rem] xl:leading-[6rem] xl:text-[88px] lg:leading-[4.8rem] sm:leading-[3.5rem] md:leading-[4.3rem] h-full py-80 ${styles.body}`} {...headTextAnimation} >
                         <HeroText sampleText='Hi.' />
                         <HeroText sampleText='I am Kush.' />
                         <HeroText sampleText='A Creative Technologist.' />
                     </motion.div>
-
-
                 </AnimatePresence>
             </Wrapper>
         </div>

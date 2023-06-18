@@ -20,7 +20,7 @@ const About = (props: Props) => {
                             <motion.div  {...slideAnimation('left')} className="w-full px-4 lg:w-6/12">
                                 <div className="flex items-center ">
                                     <div className="w-full px-3 sm:px-4 xl:w-1/2">
-                                        <div className="py-3 sm:py-4 hover:scale-105">
+                                        <div className="py-3 transition-all sm:py-4 hover:scale-105">
                                             <Image
                                                 src="https://res.cloudinary.com/dvszxda1u/image/upload/v1682316565/developer_hdccxy.png"
                                                 alt=""
@@ -29,7 +29,7 @@ const About = (props: Props) => {
                                                 className="w-full rounded-2xl"
                                             />
                                         </div>
-                                        <div className="py-3 sm:py-4 hover:scale-105">
+                                        <div className="py-3 transition-all sm:py-4 hover:scale-105">
                                             <Image
                                                 src="https://res.cloudinary.com/dvszxda1u/image/upload/v1682316565/futurist_tasxy5.png"
                                                 alt=""
@@ -39,7 +39,7 @@ const About = (props: Props) => {
                                             />
                                         </div>
                                     </div>
-                                    <div className="w-full px-3 sm:px-4 xl:w-1/2">
+                                    <div className="w-full px-3 transition-all sm:px-4 xl:w-1/2">
                                         <div className="relative z-10 my-4 hover:scale-105">
                                             <Image
                                                 src="https://res.cloudinary.com/dvszxda1u/image/upload/v1682316565/designer_ejgqq8.png"

@@ -36,14 +36,16 @@ const Header = (props: Props) => {
 
 
             <Link href="#contact" className='z-50'>
-                <motion.div className='flex flex-row items-center cursor-pointer' {...slideAnimation('right')}>
-                    <SocialIcon
-                        className='btn-scaleup'
-                        network='email'
-                        fgColor='white'
-                        bgColor='transparent' />
-                    <p className='hidden text-sm text-white uppercase sm:inline-flex'>Lets Link Up</p>
-                </motion.div>
+               
+                    <motion.div className='flex flex-row items-center cursor-pointer' {...slideAnimation('right')}>
+                        <SocialIcon
+                            className='btn-scaleup'
+                            network='email'
+                            fgColor='white'
+                            bgColor='transparent' />
+                        <p className='hidden text-sm text-white uppercase sm:inline-flex'>Lets Link Up</p>
+                    </motion.div>
+               
             </Link>
 
         </header >
