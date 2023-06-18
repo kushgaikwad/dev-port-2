@@ -3,6 +3,7 @@ import { SocialIcon } from 'react-social-icons';
 import { motion } from "framer-motion"
 import Link from 'next/link'
 import { slideAnimation } from '@/config/motion';
+import { MdOutlineMailOutline } from 'react-icons/md'
 
 type Props = {}
 
@@ -35,17 +36,13 @@ const Header = (props: Props) => {
 
 
 
-            <Link href="#contact" className='z-50'>
-               
-                    <motion.div className='flex flex-row items-center cursor-pointer' {...slideAnimation('right')}>
-                        <SocialIcon
-                            className='btn-scaleup'
-                            network='email'
-                            fgColor='white'
-                            bgColor='transparent' />
-                        <p className='hidden text-sm text-white uppercase sm:inline-flex'>Lets Link Up</p>
-                    </motion.div>
-               
+            <Link href="#contact" className='z-50 flex items-center transition-all hover:scale-110'>
+
+                <motion.div className='flex flex-row items-center justify-center gap-2 cursor-pointer' {...slideAnimation('right')}>
+                    <MdOutlineMailOutline size={20} className='text-white' />
+                    <p className='hidden text-sm text-white uppercase sm:inline-flex'>Lets Link Up</p>
+                </motion.div>
+
             </Link>
 
         </header >
