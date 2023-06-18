@@ -4,6 +4,7 @@ import About from '@/components/About'
 import Contact from '@/components/Contact'
 import Projects from '@/components/Projects'
 import Project from '@/components/Project'
+import Socials from '@/components/Socials'
 
 
 export default function Home() {
@@ -31,6 +32,11 @@ export default function Home() {
         <section id='contact' className='bg-black'>
           <Contact />
         </section>
+        
+        <section id='socials' className='bg-black'>
+          <Socials />
+        </section>
+
 
       </div>
    
