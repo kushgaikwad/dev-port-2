@@ -6,11 +6,7 @@ type Props = {}
 
 const socialLinks = [
 
-    {
-        title: "Github",
-        color: "#E4A5FF",
-        url: 'https://github.com/kushgaikwad'
-    },
+    
 
 
     {
@@ -29,7 +25,11 @@ const socialLinks = [
         color: "#FFE7CE",
         url: 'https://twitter.com/honey_musket'
     },
-
+    {
+        title: "Github",
+        color: "#E4A5FF",
+        url: 'https://github.com/kushgaikwad'
+    },
 ]
 
 const Socials = (props: Props) => {

@@ -1,5 +1,11 @@
 import Link from "next/link";
 import { BsArrowUpRight, BsGithub } from 'react-icons/bs'
+import styles from '../styles/Project.module.css'
+
+type ModalState = {
+    active: boolean,
+    id: number
+}
 
 type Props = {
     id: number,
@@ -8,33 +14,48 @@ type Props = {
     imageUrl: string,
     githubLink: string,
     demoLink: string,
+    setModal: React.Dispatch<React.SetStateAction<ModalState>>;
 }
 
 
 const Project = (props: Props) => {
+
+    const setModalActiveTrue = () => {
+        props.setModal({ active: true, id: props.id - 1 });
+    }
+    const setModalActiveFalse = () => {
+        props.setModal({ active: false, id: props.id - 1 });
+    }
+
+
+
     return (
-        <div className='flex flex-col gap-6 text-white'>
-            <span className='text-7xl text-white/20'>
-                {String(props.id).padStart(2, '0')}
-            </span>
-            <h3 className='sm:text-3xl md:text-4xl lg:text-5xl  leading-tight uppercase text-[#9389ce]'>
-                {props.title}
-            </h3>
-            <p className='text-lg sm:text-md text-slate-300'>{props.description}</p>
-            <div className='flex flex-wrap gap-10'>
-                <Link target="_blank" href={props.demoLink} ><button className="px-4 w-[7rem] py-2 flex justify-center gap-2 items-center font-bold text-black rounded   bg-[#d89078] hover:bg-[#d6957f] hover:scale-105 transition-all ">
-                    Demo
-                    <BsArrowUpRight />
-                </button>
+
+       
+        <div className={styles.projectContainer}
+            onMouseEnter={setModalActiveTrue}
+            onMouseLeave={setModalActiveFalse}
+        >
+            <div className={styles.titleContainer}>
+                <Link href={props.demoLink} target='_blank'>
+                <p className="text-[1rem] sm:text-[1.7rem] ">{props.title}</p> 
+               
                 </Link>
-                <Link target="_blank" href={props.githubLink} ><button className="px-4 flex items-center justify-center gap-2 w-[7rem] py-2 font-bold text-black rounded   bg-[#d89078] hover:bg-[#d6957f]  hover:scale-105 transition-all ">
-                    Code
-                    <BsGithub/>
-                </button>
+               
+            </div>
+            <div className={styles.linksContainer}
+                onMouseEnter={setModalActiveFalse}
+                onMouseLeave={setModalActiveTrue}
+            >
+                <Link href={props.demoLink} target="_blank" className={`${styles.linkContainer} hover:scale-125 transition-all `} >
+                    <BsGithub size={30} className='hover:text-white hover:opacity-100'  />
 
                 </Link>
+
             </div>
         </div>
+        
+
     );
 };
 
