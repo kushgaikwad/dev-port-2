@@ -1,0 +1,82 @@
+.projectContainer {
+    /* flex flex-row items-center justify-between border-t-[1px] border-gray-800 */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-top-width: 1px;
+    border-color: rgb(31 41 55);
+    padding-top: 3.5rem;
+
+    padding-bottom: 3.5rem;
+    padding-left: 0.25rem;
+    /* 4px */
+    padding-right: 0.25rem;
+
+    /* 4px */
+    transition: all 0.2s;
+   
+
+
+}
+
+.projectContainer:hover {
+    /* opacity: 0.5; */
+    background-color: rgb(3, 0, 3);
+}
+
+.projectContainer .titleContainer {
+
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: rgb(255 255 255);
+    text-transform: capitalize;
+    transition: all 0.2s;
+    
+
+}
+.projectContainer:hover .titleContainer {
+
+   transform: translateX(-1rem);
+   color: rgb(156, 149, 149);
+
+}
+
+.projectContainer .linksContainer {
+
+    display: flex;
+    flex-direction: column;
+    color: rgb(156 163 175);
+    gap: 0.5rem;
+    transition: all 0.2s;
+    height: 5vh;
+    width: 10vw;
+    align-items: flex-end;
+    justify-content: center;
+   
+}
+.projectContainer:hover .linksContainer {
+    transform: translateX(0.5rem);
+   
+}
+
+.projectContainer .linkContainer:hover {
+  
+    opacity: 1;
+    color: white;
+    
+    
+   
+}
+
+
+
+.projectContainer .linkContainer {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(156 163 175);
+    gap: 0.5rem;
+    
+}
